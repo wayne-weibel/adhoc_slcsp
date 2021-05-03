@@ -1,0 +1,13 @@
+TO RUN:
+
+```
+sudo apt install python3 python3-dev
+cd [path-to-code-dir]
+python src/main.py
+```
+
+for expanded utility:
+1. could include `argparser` and recieve the file locations via CL args
+2. use a small rdbms (sqlite) or nosql and perform a "query"
+3. create ORM and query
+4. if 2 or 3, would want unit tests; pytest and coverage, and lint
