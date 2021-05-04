@@ -32,7 +32,7 @@ def slcsp_csv():
             plan_rates = list(set(float(pr) for pr in (plans.get(zipcode[0]) or [])))
             plan_rates.sort()
             if len(plan_rates) > 1: # need at least 2 silver plans
-                row['rate'] = plan_rates[1]
+                row['rate'] = "{:.2f}".format(plan_rates[1])
 
         rates.append(row)
 
